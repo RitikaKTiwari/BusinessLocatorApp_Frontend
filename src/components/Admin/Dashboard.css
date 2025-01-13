@@ -1,0 +1,236 @@
+.admindashboard {
+  padding: 20px;
+}
+
+.dashboard-main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stat-card {
+  width: 23%;
+  background-color: #fff;
+  margin:10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* .section-container {
+  box-sizing: border-box;
+} */
+
+.top-customers-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* .top-services-container,
+.top-businesses-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+} */
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* .customer-item,
+.service-item,
+.business-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+} */
+
+/* .customer-item:last-child,
+.service-item:last-child,
+.business-item:last-child {
+  border-bottom: none;
+} */
+
+/* .customer-list,
+.service-list,
+.business-list {
+  margin-top: 10px;
+} */
+
+/* For responsive adjustments */
+@media (max-width: 768px) {
+
+  /* .sections-container {
+    grid-template-columns: 1fr;
+   } */
+  .top-customers-container,
+  .top-services-container,
+  .top-businesses-container {
+    width: 100%;
+    height:200px;
+    /* Ensure containers take full width */
+  }
+}
+
+/* Container for the sections */
+.sections-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Section container styles */
+.section-container {
+  box-sizing: border-box;
+}
+
+/* Make the section visually attractive with box-shadow and padding */
+.top-customers-container,
+.top-services-container,
+.top-businesses-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 350px;
+  /* Set a fixed height for uniformity */
+}
+
+/* Heading styles */
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Flex display for customer/service/business list */
+/* .customer-item,
+.service-item,
+.business-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+} */
+
+/* Remove the bottom border from the last item in each list */
+.customer-item:last-child,
+.service-item:last-child,
+.business-item:last-child {
+  border-bottom: none;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 768px) {
+  .sections-container {
+    grid-template-columns: 1fr;
+    /* Stack items in a single column for smaller screens */
+  }
+}
+
+.customer-list-header,
+.service-list-header,
+.business-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  /* Optional: Adds a border below the header */
+  margin-bottom: 10px;
+  /* Space between header and the customer list */
+}
+
+.customer-list-header span,
+.service-list-header span,
+.business-list-header span {
+  flex: 1;
+  /* Ensures that the spans inside have equal width */
+  text-align: left;
+  /* Aligns the text to the left */
+}
+
+.customer-item,
+.service-item,
+.business-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  /* Optional: Adds a border below each item */
+}
+
+.customer-list,
+.service-list,
+.business-list {
+  margin-top: 10px;
+}
+
+/* Ensure the sections are responsive */
+@media (max-width: 768px) {
+
+  .customer-list-header,
+  .service-list-header,
+  .business-list-header {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .customer-list-header span,
+  .service-list-header span,
+  .business-list-header span {
+    width: auto;
+    /* Ensure they adjust properly on small screens */
+  }
+}
+
+/* Styles for Chart Container */
+
+.admin-chart-sections-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.admin-chart-container {
+  width: 100%;
+  /* max-width: 800px;
+  margin: 20px auto;*/
+  padding: 10px; 
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.admin-chart-section-container h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* .chart-wrapper {
+  height: 350px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

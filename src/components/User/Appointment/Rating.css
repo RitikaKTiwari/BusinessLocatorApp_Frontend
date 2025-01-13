@@ -1,0 +1,77 @@
+/* CSS for Rating Popup */
+.rating-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .rating-popup {
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .close-ratingpopup {
+    position: absolute;
+    top: 0px;
+    color: rgb(156, 156, 156);
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .rating-stars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .rating-stars label {
+    cursor: pointer;
+  }
+
+  .rating-stars input {
+    margin-right: 5px;
+  }
+
+  .star {
+    font-size: 40px;
+    color: #d3d3d3; /* Grey color for empty stars */
+  }
+  
+  .star.filled {
+    color: #ffc107; /* Yellow color for filled stars */
+  }
+  
+  .ratingtextarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .ratingbutton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .ratingbutton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

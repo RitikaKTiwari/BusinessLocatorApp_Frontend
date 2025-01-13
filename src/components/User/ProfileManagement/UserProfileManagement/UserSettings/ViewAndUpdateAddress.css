@@ -1,0 +1,170 @@
+/* General Styles for Account Settings */
+.viewandupdateaddress-account-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Card Styling */
+.viewandupdateaddress-card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.viewandupdateaddress-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Card Style */
+
+/* Address Card Style */
+.viewandupdateaddress-address-card {
+    background-color: #e9f7ff;
+}
+
+/* Popup Styles */
+.viewandupdateaddress-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.viewandupdateaddress-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.viewandupdateaddress-popup-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Input Fields for Form */
+.viewandupdateaddress-popup-content label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.viewandupdateaddress-popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Action Buttons within Popup */
+.viewandupdateaddress-popup-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.viewandupdateaddress-popup-actions button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.viewandupdateaddress-popup-actions button:first-child {
+    background-color: #4caf50;
+    color: white;
+}
+
+.viewandupdateaddress-popup-actions button:first-child:hover {
+    background-color: #45a049;
+}
+
+.viewandupdateaddress-popup-actions button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+.viewandupdateaddress-popup-actions button:last-child:hover {
+    background-color: #e53935;
+}
+
+/* General Button Styling */
+.viewandupdateaddress-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.viewandupdateaddress-button-cancel{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.viewandupdateaddress-button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Close Button */
+.viewandupdateaddress-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.viewandupdateaddress-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.viewandupdateaddress-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}

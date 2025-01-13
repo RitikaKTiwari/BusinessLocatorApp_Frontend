@@ -1,0 +1,52 @@
+.glowy-lip-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    font-family: Arial, sans-serif;
+    /* background-color: red; */
+  }
+  
+  .titlehd{
+    font-size: 24px;
+    margin-right: 130px;
+    font-weight: bold;
+  }
+  .texthd-container {
+    /* background-color: aquamarine; */
+    flex: 1;
+    /* width: 500px; */
+    padding: 20px;
+    margin-left: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .descriptionhd{
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 150px;
+    margin-top: -5px;
+  }
+
+  .shophd-button{
+    background-color: rgb(13, 60, 81);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-left: 180px;
+  }
+
+  .imagehd-container {
+    flex: 1;
+    /* background-color: chartreuse; */
+  }
+  
+  .glowy-lip-image {
+    margin-left: -50px;
+    height: 450px;
+    width: 600px;
+  }

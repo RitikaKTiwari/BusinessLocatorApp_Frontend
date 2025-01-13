@@ -1,0 +1,160 @@
+/* Container for the favorites page */
+.favourites-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Grid for favorite cards */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Styling for individual favorite cards */
+.favorite-card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.favorite-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Service name styling */
+.service-name {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Service description styling */
+.service-description {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Book appointment button styling */
+.book-appointment-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.book-appointment-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Remove favorite button styling */
+.remove-favorite-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.remove-favorite-btn:hover {
+  color: #c0392b;
+}
+
+/* Flexbox for card layout */
+.favorite-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+/* No favorites text */
+.favourites-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #95a5a6;
+}
+
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.dialog h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.dialog p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.confirm-btn {
+  background-color: #e53935;
+  color: #fff;
+}
+
+.confirm-btn:hover {
+  background-color: #c62828;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}

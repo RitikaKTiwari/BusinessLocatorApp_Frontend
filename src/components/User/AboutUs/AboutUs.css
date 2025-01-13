@@ -1,0 +1,132 @@
+/* About Us Page Container */
+.about-us-container {
+  font-family: 'Arial', sans-serif;
+  background-color: none; /* Light background for a fresh look */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* About Us Content */
+.about-us-content {
+  max-width: 900px;
+  background-color: none;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+/* Title Styling */
+.about-us-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+/* Description Styling */
+.about-us-description {
+  font-size: 1.2rem;
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Section Styling */
+.about-us-section {
+  margin-bottom: 45px;
+}
+
+/* Subtitle Styling */
+.about-us-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Text Styling */
+.about-us-text {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* List Styling */
+.about-us-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* List Item Styling */
+.about-us-list-item {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* List Item Bullet Styling */
+.about-us-list-item::before {
+  content: '\2022';
+  color: #bc7014;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+/* Button for more engaging call-to-action */
+.about-us-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #bc7014;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.about-us-button:hover {
+  background-color: #ff8c00;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .about-us-content {
+    padding: 20px;
+  }
+  .about-us-title {
+    font-size: 2.2rem;
+  }
+  .about-us-description {
+    font-size: 1.1rem;
+  }
+  .about-us-subtitle {
+    font-size: 1.7rem;
+  }
+  .about-us-text {
+    font-size: 1rem;
+  }
+  .about-us-list-item {
+    font-size: 1rem;
+  }
+}

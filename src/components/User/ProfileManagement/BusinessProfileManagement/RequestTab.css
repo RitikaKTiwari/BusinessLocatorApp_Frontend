@@ -1,0 +1,31 @@
+.requests-tab .filter-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.requests-tab .filter-dropdown {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.requests-tab .requests-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.requests-tab .requests-table th,
+.requests-tab .requests-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.requests-tab .requests-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}

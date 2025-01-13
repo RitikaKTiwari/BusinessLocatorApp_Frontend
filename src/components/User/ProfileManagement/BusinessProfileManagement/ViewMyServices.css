@@ -1,0 +1,189 @@
+.business-business-profile-main-service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.business-profile-main-service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.business-profile-main-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.business-profile-main-service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.business-profile-main-service-header strong {
+    font-weight: bold;
+}
+
+.business-profile-main-dropdown-icon {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.business-profile-main-service-details {
+    margin-top: 15px;
+}
+
+.business-profile-main-service-details p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.business-main-operating-hours {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-time-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.day-time-row:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: 600;
+    color: #005f6b;
+    width: 50%;
+}
+
+.time {
+    color: #555;
+    width: 50%;
+    text-align: right;
+}
+
+.business-main-home-service-image-div-ser {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.business-main-home-service-image-ser {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-main-button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.business-main-button-container img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.business-main-button-container img:hover {
+    transform: scale(1.1);
+}
+
+.techmodal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.techmodal-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.techapprove-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.techapprove-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .business-profile-main-service-card {
+        padding: 15px;
+    }
+
+    .business-profile-main-service-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .business-profile-main-service-header div {
+        margin: 5px 0;
+    }
+
+    .business-profile-main-service-details p {
+        font-size: 1em;
+    }
+
+    .business-main-operating-hours {
+        padding: 8px;
+    }
+
+    .day-time-row {
+        font-size: 0.8em;
+    }
+
+    .techmodal-container {
+        width: 95%;
+    }
+}

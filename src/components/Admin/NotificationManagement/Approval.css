@@ -1,0 +1,92 @@
+.approval-list-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.approval-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.approval-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.approval-table th,
+.approval-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.approval-table th {
+    background-color: #f2f2f2;
+}
+
+.action-cell select {
+    padding: 5px;
+    width: 120px;
+}
+
+.approve-reject-button {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.approve-reject-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.approve-reject-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.approved {
+    color: green;
+}
+
+.rejected {
+    color: red;
+}
+
+.pending {
+    color: blue;
+}
+
+.approval-table td span {
+    font-weight: bold;
+}
+
+.approval-table td select {
+    width: 130px;
+}
+
+.approval-table td span {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.filter-dropdown {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    width:150px;
+}

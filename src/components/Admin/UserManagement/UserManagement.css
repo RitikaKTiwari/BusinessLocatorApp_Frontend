@@ -1,0 +1,94 @@
+.user-manage {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #e9ecef;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.user-table th:hover {
+  cursor: pointer;
+  background-color: #d4d7dc;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+  /* Light gray background on hover */
+  cursor: pointer;
+  /* Optional: shows a pointer cursor to indicate interactivity */
+}
+
+.add-user-button {
+  /* display: block; */
+  width: 20%;
+  margin: 0 auto 20px;
+  padding: 10px 18px;
+  background-color: #28a745;
+  color: white;
+  /* border: none; */
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.add-user-button:hover {
+  background-color: #218838;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pagination span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+.pagination-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  width: 30%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

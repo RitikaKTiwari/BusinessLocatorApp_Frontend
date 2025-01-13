@@ -1,0 +1,247 @@
+    /* .contact-card-title {
+    color: #505050cf;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    margin-left: -300px;
+}
+  
+  .contact-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .contact-form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+  }
+  
+  .contact-form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .contact-input-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .contact-form-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form-input:focus {
+    border-color: #00bcd4;
+  }
+  
+  .contact-form-textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .contact-send-button {
+    background-color: #00c4cc;
+    border: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; 
+    right: -265px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-send-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-send-icon {
+    font-size: 20px;
+  }
+  
+  .contact-info-container {
+    width: 40%;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+  }
+  
+  .contact-info-title {
+    font-size: 19px;
+    font-weight: 400;
+    color: #505050cf;
+  }
+  .contact-info-detail-m{
+    color: #505050cf;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+  }
+
+  .contact-info-detail {
+    color: #505050cf;
+    font-weight: 400;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-card-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-form-container,
+    .contact-info-container {
+      width: 100%;
+    }
+  
+    .contact-send-button {
+      right: 10px;
+      bottom: -20px;
+    }
+  }
+   */
+
+   .contact-us-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is on top of all other elements */
+    backdrop-filter: blur(10px); /* Add the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+  
+  .contact-card-container {
+    background-color: white; /* Dialog background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    width: 90%;
+    position: relative; /* For button positioning */
+  }
+  
+  .contact-card-title {
+    color: #505050cf;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .contact-send-button {
+    background-color: #00c4cc;
+    border: none;
+    color: white;
+    width: 60px;
+    height: 60px; /* Now square */
+    border-radius: 10px; /* Square shape with slightly rounded edges */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-send-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-close-button {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-close-button:hover {
+    color: #000;
+  }
+  
+  .contact-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .contact-form-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form-input:focus {
+    border-color: #00bcd4;
+  }
+  
+  .contact-form-textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .contact-card-container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .contact-send-button {
+      bottom: 10px;
+      right: 10px;
+    }
+  
+    .contact-close-button {
+      top: 10px;
+      right: 10px;
+    }
+  }
+  
+  
+  

@@ -1,0 +1,179 @@
+/* .bus-h2{
+  margin: 20px;
+  font-size: 28px;
+  font-weight: 540;
+} */
+@keyframes wordFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bus-h2 {
+  margin-left: 520px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 540;
+  display: flex;
+  gap: 5px; 
+  flex-wrap: wrap; 
+}
+
+.bus-h2 span {
+  opacity: 0; 
+  display: inline-block;
+  animation: wordFadeIn 0.5s ease-in forwards;
+}
+
+.bus-h2 span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bus-h2 span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.bus-h2 span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.bus-h2 span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.bus-h2 span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.bus-p{
+  margin-top: 20px;
+  font-size: 34px;
+  color: #4caf50;
+  font-weight: 700;
+}
+
+.bus-h3{
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 540;
+}
+
+/* Dashboard Content */
+.business-dashboard-content {
+  margin-top: 20px;
+}
+
+.business-dashboard-content  {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.business-stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 50px; */
+  margin-bottom: 20px;
+  /* background-color: red; */
+}
+
+.business-stat-card {
+  flex: 1 1 calc(33.33% - 20px);
+  background: rgb(189, 189, 189);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 170px;
+}
+
+.business-stat-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.business-stat-card p {
+  font-size: 1.5rem;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.business-stat-card button {
+  background-color: #005f6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: '60%';
+}
+
+.business-stat-card button:hover {
+  background-color: #008c99;
+  /* Slightly lighter teal on hover */
+  transform: scale(1.05);
+  /* Subtle zoom effect on hover */
+}
+
+.business-stat-card button:active {
+  background-color: #004851;
+  /* Darker teal when clicked */
+  transform: scale(0.95);
+  /* Slightly shrink on click for feedback */
+}
+
+/* Charts Section */
+.business-chart {
+  flex: 1 1 calc(50% - 20px);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.business-chart h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.business-stats-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.business-stat-card {
+  flex: 1;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.business-chart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds spacing between the charts */
+}
+
+.business-chart {
+  flex: 1; /* Ensures both charts take equal space */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

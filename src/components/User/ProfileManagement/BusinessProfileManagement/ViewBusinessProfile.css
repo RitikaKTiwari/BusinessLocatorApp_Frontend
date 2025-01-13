@@ -1,0 +1,278 @@
+/* General Styling body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.business-profile {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.business-profile h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #005f6b;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.business-profile p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.business-profile strong {
+    color: #005f6b;
+}
+
+.address h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.address p {
+    margin: 5px 0;
+}
+
+.error-message {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffe5e5;
+    color: #d9534f;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.business-profile p {
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #005f6b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008c99;
+} */
+/* Layout */
+.business-profile-management {
+    display: flex;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Sidebar Styling */
+/* Profile Sidebar */
+.profile-sidebar {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 20px;
+}
+
+.profile-sidebar .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-sidebar p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.profile-sidebar .contact-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.profile-sidebar .contact-info p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.profile-sidebar .contact-info a {
+    color: #00334e;
+    text-decoration: none;
+}
+
+.profile-sidebar .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.profile-sidebar .business-stats {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.profile-sidebar .business-stats p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.profile-sidebar .social-links {
+    margin-top: 20px;
+}
+
+.profile-sidebar .social-links h4 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-sidebar .social-links a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-sidebar .social-links a:hover {
+    text-decoration: underline;
+}
+
+.profile-sidebar .update-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-sidebar .update-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Main Section Styling */
+.profile-main {
+    width: 75%;
+    padding: 20px;
+}
+
+.profile-tabs {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.profile-tabs button {
+    background: none;
+    border: none;
+    width: 360px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+    color: black;
+    /* Default font color for inactive tabs */
+}
+
+.profile-tabs button.active {
+    border-bottom: 2px solid #00466c;
+    color: black;
+}
+
+/* Content Section */
+.profile-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.overview-section h2 {
+    margin-bottom: 10px;
+}
+
+.overview-section p {
+    margin: 5px 0;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.edit-avatar-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pencil-icon {
+    width: 24px;
+    height: 24px;
+}

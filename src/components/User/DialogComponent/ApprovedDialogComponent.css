@@ -1,0 +1,48 @@
+.approved-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.approved-box {
+    background-color: white;
+    padding: 80px;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.approved-image {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.approved-close-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.approved-close-button:hover {
+    background-color: #45a049;
+}
+
+.approved-text{
+    font-size: 15px;
+    color: black;
+}

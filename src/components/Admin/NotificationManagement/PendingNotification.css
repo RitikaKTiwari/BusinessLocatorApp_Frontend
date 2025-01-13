@@ -1,0 +1,109 @@
+/* NotificationTab.css */
+
+.pending-notifications {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pending-card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.pending-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    text-align: left;
+    position: relative;
+}
+
+.pending-card h3 {
+    margin: 0 0 10px;
+    color: #005f6b;
+    font-size: 1.2rem;
+}
+
+.pending-card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.pending-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.pending-approve-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.pending-approve-button:hover {
+    background-color: #45a049;
+}
+
+.pending-reject-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.pending-reject-button:hover {
+    background-color: #e53935;
+}
+
+.pending-textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-size: 0.9rem;
+}
+
+.pending-textarea::placeholder {
+    color: #999;
+}
+
+.pending-textarea:focus {
+    border-color: #005f6b;
+    outline: none;
+}
+
+.pending-loading-spinner {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}

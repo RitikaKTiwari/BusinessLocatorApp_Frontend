@@ -1,0 +1,127 @@
+.cmscroll-menu-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  background-color: black;
+  padding: 10px 0;
+  position: relative;
+  /* Maintain relative positioning for the scroll menu */
+}
+
+/* Hide scrollbar for all browsers */
+.cmmaincatmenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.cmscroll-menu-wrapper::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
+/* .scroll-menu-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+.cmcategory-menu {
+  width: 100%;
+  white-space: nowrap;
+  background-color: black;
+}
+
+.cmmenu-item {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  /* transition: background-color 0.3s;
+    background-color: #333;
+    border-radius: 6px; */
+}
+
+/* Hover effect */
+.cmmenu-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+}
+
+/* Active (clicked) effect */
+.cmmenu-item.selected {
+  background-color: white;
+  color: black;
+  border: 2px solid #333;
+  border-radius: 6px;
+}
+
+/* Subcategory Section */
+.cmsubcategory-menu {
+  position: absolute;
+  /* Make subcategory menu float above other content */
+  top: 150px;
+  /* Adjust this according to where you want it to be */
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  z-index: 999;
+  /* Ensure the subcategory menu is on top */
+}
+
+.cmsubcategory-title h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Subcategory Grid Layout */
+.cmsubcategory-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cmsubcategory-item {
+  background-color: #fff;
+  /* border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;*/
+  cursor: pointer;
+  /* transition: background-color 0.3s;  */
+}
+
+.cmservice-item:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cmsubcategory-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .cmmenu-item {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .cmsubcategory-menu {
+    top: 60px;
+  }
+}
+
+.cmservices-list {
+  align-items: center;
+}
+
+.cmservice-item {
+  background-color: #f9f9f9;
+}
+
+.cmservices-list>div {
+  font-style: italic;
+  color: #666;
+}

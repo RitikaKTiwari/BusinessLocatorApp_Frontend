@@ -1,0 +1,13 @@
+.chart-container {
+          /* Fixed height */
+    margin: 0 auto;        /* Center the chart horizontally */
+    margin-bottom: 10%;
+    /* background-color: red; */
+    height: 400px;
+    width: 400px;
+  }
+
+  .chart-pie{
+    height: 10px;
+    width: 10px;
+  }

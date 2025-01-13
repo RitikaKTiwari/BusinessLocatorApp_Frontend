@@ -1,0 +1,95 @@
+/* Container that holds the background content */
+.background-content {
+    transition: filter 0.3s ease;
+}
+
+/* Apply the blur effect when the modal is open */
+.blurred {
+    filter: blur(5px); /* Adjust blur strength */
+    pointer-events: none; /* Prevent interaction with the blurred background */
+}
+
+/* Modal overlay to cover the screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal container styling */
+.modal-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    z-index: 1100;
+}
+
+/* Styles for the UpdateTechnician form */
+.update-technician-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.update-technician-container input,
+.update-technician-container select,
+.update-technician-container textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.update-technician-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.update-technician-container button:hover {
+    background-color: #0056b3;
+}
+
+.update-technician-container button:last-child {
+    background-color: #ccc;
+}
+
+.update-technician-container button:last-child:hover {
+    background-color: #aaa;
+}
+
+
+
+
+/* Submit button styles */
+/* .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #005f6b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008c99;
+} */

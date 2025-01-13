@@ -1,0 +1,48 @@
+.shoecontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-family: Arial, sans-serif;
+}
+
+.shoetitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shoehd-container {
+  flex: 1;
+  padding: 20px;
+  margin-left: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoedescriptionhd {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.shoe-button {
+  background-color: rgb(167, 56, 79);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin-left: 260px;
+}
+
+.videoshoecontainer {
+  flex: 1;
+  /* background-color: chartreuse; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videohd {
+  width: 100%;
+  height: 600px;
+}
